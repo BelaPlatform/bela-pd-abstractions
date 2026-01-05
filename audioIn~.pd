@@ -1,0 +1,12 @@
+#N canvas 149 275 304 162 12;
+#X obj 13 6 r bela_setup;
+#X obj 13 102 adc~ -1;
+#X obj 13 126 outlet~;
+#X msg 13 78 set \$1;
+#X obj 13 54 bela-private-compute-channel \$1 audioIn~;
+#X obj 13 30 route audioInChannels;
+#X connect 0 0 5 0;
+#X connect 1 0 2 0;
+#X connect 3 0 1 0;
+#X connect 4 0 3 0;
+#X connect 5 0 4 0;
