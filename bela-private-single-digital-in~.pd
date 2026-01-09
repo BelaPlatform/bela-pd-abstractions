@@ -5,12 +5,12 @@
 #X msg 16 145 set \$1;
 #X obj 16 193 outlet~;
 #X obj 16 35 route digitalChannels;
-#X obj 16 61 bela-private-compute-channel \$1 digitalIn~;
 #X obj 16 8 r bela_setup;
+#X obj 16 61 bela-private-compute-channel \$1 digital-in~;
 #X connect 1 0 0 0;
 #X connect 2 0 4 0;
 #X connect 3 0 2 0;
-#X connect 5 0 6 0;
-#X connect 6 0 3 0;
-#X connect 6 0 1 0;
-#X connect 7 0 5 0;
+#X connect 5 0 7 0;
+#X connect 6 0 5 0;
+#X connect 7 0 3 0;
+#X connect 7 0 1 0;

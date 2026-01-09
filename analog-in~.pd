@@ -1,0 +1,5 @@
+#N canvas 0 110 1512 844 12;
+#X obj 26 49 namecanvas \$0-bela-analog-in~;
+#X obj 23 95 bela-private-dynamic-pairs \$0-bela-analog-in~ 2 bela-private-single-analog-in~ outlet~ topbottom;
+#A saved;
+#X coords 0 844 1 843 400 1000 0;

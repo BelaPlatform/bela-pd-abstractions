@@ -1,7 +1,5 @@
-#N canvas 167 32 1345 844 12;
-#X obj 26 49 namecanvas \$0-audioIn~;
-#X obj 20 70 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
-#X obj 23 95 bela-private-dynamic-outlets \$0-audioIn~ 3;
+#N canvas 167 32 544 844 12;
+#X obj 26 49 namecanvas \$0-bela-audio-in~;
+#X obj 23 95 bela-private-dynamic-pairs \$0-bela-audio-in~ 2 bela-private-single-audio-in~ outlet~ topbottom;
 #A saved;
-#X connect 1 0 2 0;
 #X coords 0 844 1 843 400 1000 0;

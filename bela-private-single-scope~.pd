@@ -1,0 +1,12 @@
+#N canvas 694 98 384 142 12;
+#X msg 76 85 set \$1;
+#X obj 76 8 r bela_setup;
+#X obj 76 35 route scopeChannels;
+#X obj 76 61 bela-private-compute-channel \$1 scopeOut~;
+#X obj 76 109 dac~ -1;
+#X obj 16 6 inlet~;
+#X connect 0 0 4 0;
+#X connect 1 0 2 0;
+#X connect 2 0 3 0;
+#X connect 3 0 0 0;
+#X connect 5 0 4 0;
