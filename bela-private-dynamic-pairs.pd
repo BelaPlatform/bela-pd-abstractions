@@ -54,7 +54,7 @@
 #X obj 403 629 route topbottom bottomtop;
 #X obj 489 655 swap;
 #X obj 428 711 unpack f f;
-#X text 259 259 First we clear all objects;
+#X text 248 266 First we clear all objects;
 #X obj 403 606 list trim;
 #X text 398 422 compute connections;
 #X obj 203 377 print Error \$1;
@@ -63,7 +63,7 @@
 #X obj 490 679 pack f f;
 #X msg 254 285 vis 1 \, editmode 1 \, mouse 1 200 0 0 \, mouseup 1500 1000 0 \, cut \, vis 0;
 #X msg 41 800 vis 1 \, obj \$1 \$2 \$3 \$4 \, obj \$1 810 \$5 \, connect \$6 0 \$7 0 \, vis 0;
-#X text 169 217 TODO: clearing is disabled because running embedded doesn't allow mouse/mouseup commands. So we have to assume that the parent patch is always saved without stale objects;
+#X text 247 213 TODO: clearing should be disabled when running embedded because that doesn't allow mouse/mouseup commands. So we have to assume that the parent patch is always saved without stale objects;
 #X connect 0 0 4 0;
 #X connect 0 0 10 0;
 #X connect 1 0 2 0;
@@ -98,6 +98,7 @@
 #X connect 25 0 22 0;
 #X connect 26 0 46 0;
 #X connect 27 0 25 0;
+#X connect 27 1 62 0;
 #X connect 28 0 26 0;
 #X connect 29 0 46 1;
 #X connect 30 0 29 0;
