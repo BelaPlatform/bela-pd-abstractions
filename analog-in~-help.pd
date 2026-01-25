@@ -1,0 +1,7 @@
+#N canvas 1991 1190 1512 844 12;
+#X obj 46 82 bela/audio-in~ 0 1;
+#X text 45 213 See also:;
+#X obj 46 245 bela/audio-out~ 0 1;
+#X text 42 22 Abstraction to simplify channel numbering across different Bela hardware.;
+#X text 213 79 Channel numbers are starting from 0 like printed on the Bela hardware;
+#X coords 0 844 1 843 400 1000 0;

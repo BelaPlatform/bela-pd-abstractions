@@ -1,0 +1,10 @@
+#N canvas 564 544 1345 844 12;
+#X obj 43 84 bela/digital-in~ 0 1 2;
+#X text 42 22 Abstraction to simplify channel numbering across different Bela hardware.;
+#X text 213 79 Channel numbers are starting from 0 like printed on the Bela hardware;
+#X text 45 213 See also:;
+#X obj 41 282 bela/digital-out~ 0 1 2 5;
+#X obj 44 244 bela/digital-in 0 1 2;
+#X text 228 242 non-signal version;
+#X obj 43 316 bela/digital-out 0 1 2 5;
+#X coords 0 844 1 843 400 1000 0;

@@ -1,0 +1,4 @@
+#N canvas 480 1039 1345 844 12;
+#X obj 53 137 bela/scope~ 0 1 2 3;
+#X text 59 46 scope~ allows sending signals to the oscilloscope of the Bela IDE;
+#X coords 0 844 1 843 400 1000 0;
