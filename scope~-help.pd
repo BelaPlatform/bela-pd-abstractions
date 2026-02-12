@@ -1,4 +1,12 @@
-#N canvas 480 1039 1345 844 12;
-#X obj 53 137 bela/scope~ 0 1 2 3;
-#X text 59 46 scope~ allows sending signals to the oscilloscope of the Bela IDE;
-#X coords 0 844 1 843 400 1000 0;
+#N canvas 63 95 509 203 12;
+#X obj 55 166 bela/scope~ 0 1 2 3;
+#X text 97 9 scope~ allows sending signals to the oscilloscope of the Bela IDE. There are four channels available:;
+#X obj 54 56 osc~ 100;
+#X obj 98 79 osc~ 150;
+#X obj 141 104 osc~ 200;
+#X obj 185 127 osc~ 250;
+#X obj 10 13 bela/scope~;
+#X connect 2 0 0 0;
+#X connect 3 0 0 1;
+#X connect 4 0 0 2;
+#X connect 5 0 0 3;

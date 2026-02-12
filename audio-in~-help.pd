@@ -1,0 +1,15 @@
+#N canvas 612 97 498 333 12;
+#X text 7 243 See also:;
+#X text 4 49 Channel numbers start from 0 (e.g.: on a stereo board \, 0 is left and 1 is right) and match the numbering on the board itself. Under the hood \, these channels are turned into [adc~] channels by adding 1 to them.;
+#X text 4 126 If you use more channels than available on the board you run your patch on \, they will be discarded when running on the board.;
+#X obj 6 177 bela/audio-in~ 0 1 2 3;
+#X text 83 9 Abstraction to read audio inputs from Bela. Arguments are the audio channels to read from.;
+#X obj 9 14 audio-in~;
+#X obj 8 265 bela/audio-out~;
+#X obj 8 291 bela/analog-in~;
+#X obj 6 205 bela/audio-out~ 0 1 2 3;
+#X text 184 192 pass inputs through to the outputs;
+#X connect 3 0 8 0;
+#X connect 3 1 8 1;
+#X connect 3 2 8 2;
+#X connect 3 3 8 3;
